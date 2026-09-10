@@ -2,19 +2,21 @@ import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 
 void main() {
-  runApp(const TodoApp());
+  runApp(const QuestLogApp());
 }
 
-class TodoApp extends StatelessWidget {
-  const TodoApp({super.key});
+class QuestLogApp extends StatelessWidget {
+  const QuestLogApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'My To-Do List',
+      title: 'QuestLog RPG',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: const Color(0xFF12122B),
+        primaryColor: const Color(0xFF7C4DFF),
         useMaterial3: true,
       ),
       home: const HomeScreen(),
